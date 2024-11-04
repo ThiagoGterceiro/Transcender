@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="./scr/css/nav_rodape.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./scr/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./scr/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./scr/img/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <audio id="button-sound" src="./scr/audio/videoplayback (mp3cut.net).mp3"></audio>
 
   <!-- Header com Navbar Horizontal -->
   <header class="navbar">
     <div class="logo">
-        <img src="./scr/img/logo_trans.svg" width="70px" alt="Logo do OrgulhoVivo">
-        <h1>Transcender</h1>
+      <a href="./index.html"><img src="./scr/img/logo_trans.svg" width="250px" alt="Logo do Trasncender"></a>
     </div>
     <!-- Checkbox Toggle e Label para o Menu -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -32,24 +35,28 @@
     </nav>
   </header>
 
-     <!-- Seção de Boas-vindas  fora do main-->
-        <section class="intro">
-          <div class="background"></div> <!-- Div para a imagem de fundo -->
-          <div class="intro-content"> <!-- Novo container para o conteúdo -->
-           <h2>Bem-vindo ao Transcender!</h2>
-          <p>
-              No Transcender, acreditamos em um mundo onde cada pessoa possa ser ela mesma, com segurança, respeito e apoio. Este é um espaço criado para a comunidade LGBTQ+, onde histórias se cruzam, experiências são compartilhadas e a diversidade é celebrada.
-          </p>
-          <p>
-              Junte-se a nós para construir uma rede de apoio e fortalecimento, onde todos podem viver, se expressar e inspirar. Estamos aqui por você e com você.
-          </p>
+       <!-- Seção de Boas-vindas  fora do main-->
+       <section class="intro">
+        <div class="background"></div> <!-- Div para a imagem de fundo -->
+        <div class="intro-content"> <!-- Novo container para o conteúdo -->
+            <h2>Bem-vindo ao Transcender!</h2>
+            <p>No Transcender, acreditamos em um mundo onde cada pessoa possa ser ela mesma, com segurança, respeito e apoio. Este é um espaço criado para a comunidade LGBTQ+, onde histórias se cruzam, experiências são compartilhadas e a diversidade é celebrada.</p>
+            <p>Junte-se a nós para construir uma rede de apoio e fortalecimento, onde todos podem viver, se expressar e inspirar. Estamos aqui por você e com você.</p>
             <div class="cta-buttons">
-                <a href="#cadastro" class="button">Junte-se a nós</a>
-                <a href="#recursos" class="button">Explore Recursos</a>
+                <!-- Botão com som ao clicar -->
+                <a href="#cadastro" class="button" onclick="playSound()">Junte-se a nós</a>
+                <a href="./recursos.html" class="button">Explore Recursos</a>
             </div>
-          </div>
-        </section>
-    <!-- Conteúdo Principal -->
+        </div>
+    </section>
+
+    <script>
+      function playSound() {
+          const sound = document.getElementById("button-sound");
+          sound.play();
+      }
+    </script>
+    
   <main>
         <!-- Seção de Destaques -->
         <section class="destaques">
@@ -85,7 +92,7 @@
                         <img src="./scr/img/zig.png" alt="Imagem mostra as cantoras Brooke Candy,Urias e Katy da Voz e as Abusadas" class="noticia-img">
                         <div class="noticia-texto">
                             <h4>ZIG Festival traz Urias, Katy da Voz e as Abusadas e mais</h4>
-                            <p>Os ingressos já estão disponíveis pelo Shotgun. O ZIG Festival, uma grande celebração do universo ZIG e de tudo que foi construído ao longo dos últimos anos, chega a São Paulo no dia 7 de dezembro. O evento será realizado no Sonora Garden, dentro do Estádio da Portuguesa, no Canindé, prometendo 13 horas ininterruptas de música e diversão, com mais de 25 atrações.</p>
+                            <p>Os ingressos já estão disponíveis pelo Shotgun. O ZIG Festival, uma grande celebração do universo ZIG e de tudo que foi construído ao longo dos últimos anos, chega a São Paulo no dia 7 de dezembro. </p>
                             <a target="_blank" href="https://hashtagpop.com.br/zig-festival-traz-brooke-candy-urias-katy-da-voz-e-as-abusadas-e-mais-para-sao-paulo-em-dezembro/" class="button">Leia mais</a>
                         </div>
                     </div>

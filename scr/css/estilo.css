@@ -17,9 +17,20 @@ body {
 
 }
 
-/* Estilo para o conteúdo principal */
-main {
-    padding: 0; 
+/* Estilos padrão do botão */
+.button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4A90E2;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover */
+.button:hover {
+    background-color: #357ABD; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
 }
 
 .intro {
@@ -62,7 +73,7 @@ main {
 }
 
 
-/* Estilo da Seção de Destaques porfavor não mexer mt */
+/* Estilo da Seção de Destaques */
 .destaques {
     text-align: center;
     padding: 40px 20px;
@@ -75,14 +86,15 @@ main {
 }
 
 .destaques .noticias {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas iguais */
     gap: 20px;
+    justify-items: center; /* Centraliza as notícias dentro do grid */
 }
 
 .noticia {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -114,21 +126,19 @@ main {
     background-color: #e47db0; /* Rosa da bandeira trans */
     color: #fff;
     border-radius: 4px;
-}
-.noticia .button {
-    display: block;
-    margin: 0 10px 15px;
-    padding: 8px 16px;
-    text-align: center;
-    background-color: #e47db0; /* Rosa da bandeira trans */
-    color: #fff;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Suavidade na transição */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .noticia .button:hover {
     background-color: #2878b5; /* Tom de rosa mais escuro para o efeito */
-    transform: translateY(-3px); /* Elevação do botão */
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .destaques .noticias {
+        grid-template-columns: 1fr; /* Exibe uma coluna em telas menores */
+    }
 }
 
 

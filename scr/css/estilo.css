@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 15vw; /* Define uma margem de 15vw nas laterais */
+    padding: 20px; /* Adiciona um padding interno se necessário */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fffab8b6;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 0; 
+}
+
+.intro {
+    position: relative;
+    color: white; /* Ajuste a cor do texto para melhor legibilidade */
+    padding: 250px 20px; /* Adicione um pouco de padding */
+    text-align: center; 
+    overflow: hidden; 
+}
+
+/* Imagem de fundo e filtro escuro evitar mexer pq as vezes some*/
+.intro::before {
+    content: '';
+    background-image: url('../img/thumbx.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    opacity: 1; /* Ajuste a opacidade para o efeito do filtro escuro (EVITAR DE DEIXAR ABAIXO DE 0,5) */
+    background-size: cover; 
+    background-position: top; 
+    filter: brightness(30%); /* Escurece a imagem com um filtro (por algum motivo acima de 40% fica branco) */
+}
+
+.intro h2, .intro p {
+    position: relative; /* Isso garante que o texto fique acima da imagem de fundo */
+    z-index: 1; /* Coloca o texto acima do fundo */
+}
+
+.intro .cta-buttons a.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e47db0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Estilo da Seção de Destaques porfavor não mexer mt */
+.destaques {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.destaques h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6c80;
+}
+
+.destaques .noticias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.noticia {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.noticia-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.noticia h4 {
+    font-size: 1.25em;
+    margin: 15px 10px;
+}
+
+.noticia p {
+    padding: 0 10px 15px;
+    color: #555;
+}
+
+.noticia .button {
+    display: block;
+    margin: 0 10px 15px;
+    padding: 8px 16px;
+    text-align: center;
+    background-color: #e47db0; /* Rosa da bandeira trans */
+    color: #fff;
+    border-radius: 4px;
+}
+.noticia .button {
+    display: block;
+    margin: 0 10px 15px;
+    padding: 8px 16px;
+    text-align: center;
+    background-color: #e47db0; /* Rosa da bandeira trans */
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suavidade na transição */
+}
+
+.noticia .button:hover {
+    background-color: #2878b5; /* Tom de rosa mais escuro para o efeito */
+    transform: translateY(-3px); /* Elevação do botão */
+}
+
+
+  
+/* Estilo para as redes sociais */
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+
+/* Título da aba */
+.tab-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Descrição da aba */
+.tab-description {
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo das seções */
+.doc-section {
+    margin-bottom: 20px;
+}
+
+/* Título de cada seção */
+.doc-section h4 {
+    font-size: 1.4em;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+/* Lista de links */
+.doc-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.doc-list li {
+    margin-bottom: 5px;
+}
+
+  /* Links dos documentos */
+  .doc-list a {
+    color: #da0053;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.doc-list a:hover {
+    color: #da0053;
+    text-decoration: underline;
+}
+
+
+
+/* Estilo da seção de Grupos de Apoio e Institutos */
+.grupos-apoio {
+    padding: 3rem 2rem;
+    background-color: #a9f9ff;
+    text-align: center;
+  }
+  
+  .grupos-apoio h2 {
+    font-size: 2.2rem;
+    color: #ff6c80;
+    margin-bottom: 1rem;
+  }
+  
+  .grupos-apoio .descricao {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Container dos cards */
+  .apoio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* Estilo dos cards de apoio */
+  .apoio-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.2s ease;
+  }
+  
+  .apoio-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .apoio-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .apoio-card h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  
+  .apoio-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .apoio-card .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e47db0;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .apoio-card .button:hover {
+    background-color: #2878b5;
+  }
+

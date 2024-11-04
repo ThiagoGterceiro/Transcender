@@ -1,0 +1,32 @@
+.detalhes-artista {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.artista {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-artista {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.info-artista {
+    flex: 1;
+}
+
+.video-artista {
+    margin-top: 20px;
+    text-align: center;
+}
+

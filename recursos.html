@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - Transcender</title>
+    <link rel="stylesheet" href="./scr/css/estilo.css">
+    <link rel="stylesheet" href="./scr/css/nav_rodape.css">
+    <link rel="stylesheet" href="./scr/css/recursos.css ">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header com Navbar Horizontal -->
+  <header class="navbar">
+    <div class="logo">
+        <img src="./scr/img/logo_trans.svg" width="70px" alt="Logo do OrgulhoVivo">
+        <h1>Transcender</h1>
+    </div>
+    <!-- Checkbox Toggle e Label para o Menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./duvidas.html">Duvidas</a></li>
+            <li><a href="./recursos.html">Recursos</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#historias">Histórias</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+  </header>
+    <!-- Conteúdo Principal -->
+    <main class="resource-page">
+        <h2>Recursos</h2>
+        <p>Explore documentos, dados, artistas, ativistas e ONGs que contribuem para a visibilidade e apoio à comunidade trans.</p>
+
+        <!-- Abas de Navegação -->
+        <div class="tab-navigation">
+            <button class="tab-button active" onclick="openTab(event, 'documentos-dados')">Documentos e Dados</button>
+            <button class="tab-button" onclick="openTab(event, 'artistas-ativistas')">Artistas, Ativistas e ONGs</button>
+        </div>
+
+        <!-- Conteúdo das Abas -->
+        <div id="documentos-dados" class="tab-content active">
+            <div class="content-wrapper">
+                <h3>Documentos e Dados</h3>
+                <p>Aqui você encontra documentos oficiais, estudos e dados importantes relacionados à comunidade trans e LGBTQIA+.</p>
+
+                <!-- Enfrentamento à LGBTIfobia -->
+                <section class="doc-section">
+                    <h4>Enfrentamento à LGBTIfobia</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/03/cartilha-lgbtifobia.pdf" target="_blank">O Que fazer em caso de violência LGBTIfóbica</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/12/protocolo-policial-para-enfrentamento-da-violencia-lgbtfobica-no-brasil-1.pdf" target="_blank">Protocolo Policial para enfrentamento da LGBTIfobia</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2023/08/nota-tecnica-wc-antra-final.pdf" target="_blank">Nota Técnica sobre o uso do Banheiro por pessoas trans - ANTRA</a></li>
+                    </ul>
+                </section>
+                
+                <!-- Segurança Pública -->
+                <section class="doc-section">
+                    <h4>Segurança Pública</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/03/seguranc3a7a-pc3bablica-lgbti-2c2aa-edic3a7c3a3o.pdf" target="_blank">Cartilha Segurança Pública LGBTI - 2ª Edição</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/03/manual-de-seguranc387a-pc39ablica-atendimento-e-abordagem-lgbti.pdf" target="_blank">Manual de Segurança Pública – Atendimento e Abordagem LGBTI</a></li>
+                    </ul>
+                </section>
+
+                <!-- Sistema Prisional -->
+                <section class="doc-section">
+                    <h4>Sistema Prisional</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2023/01/dossie-transbrasil-sistema-prisional.pdf" target="_blank">Dossiê TransBrasil – Diagnóstico Sistema Prisional – ANTRA</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/12/nao-existe-cadeia-humanizada-nf.pdf" target="_blank">Não existe cadeia humanizada – Estudo sobre a situação da população LGBTI no cárcere</a></li>
+                    </ul>
+                </section>
+
+                <!-- Violência Doméstica -->
+                <section class="doc-section">
+                    <h4>Violência Doméstica</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/04/cartilha-violencia-domestica-antra-2.pdf" target="_blank">Cartilha Violência Doméstica – ANTRA</a></li>
+                    </ul>
+                </section>
+
+                <!-- Diversidade e Inclusão -->
+                <section class="doc-section">
+                    <h4>Diversidade e Inclusão</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://d335luupugsy2.cloudfront.net/cms/files/268184/1620922461Cartilha_Diversidade_Inclusao_Abrasce.pdf" target="_blank">Cartilha Diversidade e Inclusão para Shopping Center</a></li>
+                    </ul>
+                </section>
+
+                <!-- Profissionais do Sexo -->
+                <section class="doc-section">
+                    <h4>Profissionais do Sexo</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/04/dica-profissionais-do-sexo-covid19-antra.pdf" target="_blank">Dica Profissionais do Sexo COVID19 – ANTRA</a></li>
+                    </ul>
+                </section>
+
+                <!-- Dossiês da Violência -->
+                <section class="doc-section">
+                    <h4>Dossiês da Violência</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/assassinatos/" target="_blank">Dossiês da Violência e do Assassinato de pessoas Trans</a></li>
+                    </ul>
+                </section>
+
+                <!-- Alteração de Nome e Gênero -->
+                <section class="doc-section">
+                    <h4>Alteração de Nome e Gênero</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2022/11/diagnostico-retificao-antra2022.pdf" target="_blank">Diagnóstico sobre o acesso à retificação de nome e gênero de travestis e demais pessoas trans no Brasil</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/03/cartilha-alterac3a7c3a3o-nome-e-genero.pdf" target="_blank">Cartilha Alteração Nome e Genero ANTRA</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/03/guia_retificacao_genero.pdf" target="_blank">Guia Retificação Nome e Genero ANTRA e CASA1</a></li>
+                    </ul>
+                </section>
+
+                <!-- Alistamento Militar -->
+                <section class="doc-section">
+                    <h4>Alistamento Militar</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/03/guia_abglt_alistamento_pessoastrans.pdf" target="_blank">Guia Alistamento Pessoas Trans</a></li>
+                    </ul>
+                </section>
+
+                <!-- Declaração de Nascido Vivo -->
+                <section class="doc-section">
+                    <h4>Declaração de Nascido Vivo (DNV) – Filhos de Pessoas Trans</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2021/04/declaracao-de-nascido-vivo-para-registro-de-filhos-e-filhas-de-pessoas-trans.pdf" target="_blank">Cartilha Declaração de Nascido (DNV) vivo para registro de filhos de pessoas trans</a></li>
+                    </ul>
+                </section>
+
+                <!-- Saúde -->
+                <section class="doc-section">
+                    <h4>Saúde</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/08/dicas-de-cuidados-ao-acuendar-a-neca.pdf" target="_blank">Dicas de cuidados ao acuendar a neca</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/12/guia-hormonizacao.pdf" target="_blank">Guia Hormonização – Saúde de Pessoas Trans</a></li>
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2020/03/cartilha-prep-trans.pdf" target="_blank">Cartilha PrEP Trans</a></li>
+                    </ul>
+                </section>
+
+                <!-- Trabalho -->
+                <section class="doc-section">
+                    <h4>Trabalho</h4>
+                    <ul class="doc-list">
+                        <li><a href="https://antrabrasil.org/wp-content/uploads/2021/01/nota-tecnica-trabalho-mercado-lgbt-final.pdf" target="_blank">Nota Técnica sobre Mercado de Trabalho para pessoas LGBT</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+  <!-- Conteúdo da Aba Artistas, Ativistas e ONGs -->
+<div id="artistas-ativistas" class="tab-content">
+    <div class="content-wrapper">
+        <h3>Artistas, Ativistas e ONGs</h3>
+        <p>Explore o trabalho de artistas, ativistas e ONGs que apoiam e elevam a visibilidade da comunidade trans.</p>
+
+        <!-- Seção Ativistas -->
+        <section class="doc-section">
+            <h4>Ativistas</h4>
+            <ul class="doc-list">
+                <li>
+                    <img src="./scr/img/erikaHilton.png" alt="foto da Deputada Erika Hilton" class="doc-image">
+                <a href="https://www.instagram.com/hilton_erika/?hl=pt-br" target="_blank">Erika Hilton - Deputada Federal e Ativista</a>
+                </li>
+                <li>
+                    <img src="./scr/img/linn-da-quebrada.png" alt="foto da ativista Linn da Quebrada" class="doc-image">
+                    <a href="https://www.instagram.com/linnethia" target="_blank">Linn da Quebrada - Cantora, Atriz e Ativista</a>
+                </li>
+                <li>
+                    <img src="./scr/img/Boombeat.png" alt="foto da artista Boombeat" class="doc-image">
+                    <a href="https://www.instagram.com/boombeat" target="_blank">Boombeat - Ativista e Criador de Conteúdo</a>
+                </li>
+                <li>
+                    <img src="./scr/img/AliceMarcone.png" alt="foto da cantora Alice Marcone" class="doc-image">
+                    <a href="https://www.instagram.com/alice.marcone" target="_blank">Alice Marcone - Artista e Ativista</a>
+                </li>
+                <li>
+                    <img src="./scr/img/MandyCandy.png" alt="foto da influenciadora Mandy Candy" class="doc-image">
+                    <a href="https://www.instagram.com/indigenamandy" target="_blank">Mandy Candy - Influenciadora Digital e Ativista</a>
+                </li>
+                <li>
+                    <img src="./scr/img/jupDoBairro.png" alt="foto da Cantora Jup do Bairro" class="doc-image">
+                    <a href="https://www.instagram.com/jupdoesbailes" target="_blank">Jup do Bairro - Cantora, Compositora e Artista Visual</a>
+                </li>
+            
+            </ul>
+        </section>
+
+        <!-- Seção ONGs -->
+        <section class="doc-section">
+            <h4>ONGs</h4>
+            <ul class="doc-list">
+                <li><a href="https://casadeacolhidaspernambuco.com.br" target="_blank">Casa de Acolhida LGBT+ - Pernambuco</a></li>
+                <li><a href="https://www.casachama.org" target="_blank">Casa Chama - São Paulo</a></li>
+                <li><a href="https://www.instagram.com/anjosdarua_trans" target="_blank">Anjos da Rua - Rio de Janeiro</a></li>
+                <li><a href="https://antrabrasil.org" target="_blank">ANTRA - Associação Nacional de Travestis e Transexuais</a></li>
+                <li><a href="https://www.institutocpv.org" target="_blank">Instituto CPV - São Paulo</a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+</div>
+     <!-- Script para alternar entre abas -->
+     <script>
+        function openTab(event, tabId) {
+            // Esconde todas as abas
+            var tabContents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = 'none';
+                tabContents[i].classList.remove('active');
+            }
+
+            // Remove a classe "active" de todos os botões
+            var tabButtons = document.getElementsByClassName('tab-button');
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+
+            // Mostra a aba selecionada e adiciona "active" ao botão
+            document.getElementById(tabId).style.display = 'block';
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Define a aba inicial para exibir
+        document.getElementById("documentos-dados").style.display = "block";
+    </script>
+    </main>
+    <br>
+<!-- Rodapé -->
+<footer>
+    <p>© 2024 Transcender - Todos os direitos reservados.</p>
+    <div class="social-media">
+      <ul class="wrapper">
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <svg
+              viewBox="0 0 320 512"
+              height="1.2em"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+              ></path>
+            </svg>
+          </li>
+          <li class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <svg
+              height="1.8em"
+              fill="currentColor"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              class="twitter"
+            >
+              <path
+                d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+              ></path>
+            </svg>
+          </li>
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.2em"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              ></path>
+            </svg>
+          </li>
+        </ul>
+    </div>
+  </footer>
+</body>
+</html>

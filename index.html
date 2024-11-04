@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcender - Onde Todas as Cores se Encontram</title>
+    <link rel="stylesheet" href="./scr/css/estilo.css">
+    <link rel="stylesheet" href="./scr/css/nav_rodape.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header com Navbar Horizontal -->
+  <header class="navbar">
+    <div class="logo">
+        <img src="./scr/img/logo_trans.svg" width="70px" alt="Logo do OrgulhoVivo">
+        <h1>Transcender</h1>
+    </div>
+    <!-- Checkbox Toggle e Label para o Menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./duvidas.html">Duvidas</a></li>
+            <li><a href="./recursos.html">Recursos</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#historias">Histórias</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+  </header>
+     <!-- Seção de Boas-vindas  fora do main-->
+        <section class="intro">
+          <div class="background"></div> <!-- Div para a imagem de fundo -->
+          <div class="intro-content"> <!-- Novo container para o conteúdo -->
+           <h2>Bem-vindo ao Transcender!</h2>
+          <p>
+              No Transcender, acreditamos em um mundo onde cada pessoa possa ser ela mesma, com segurança, respeito e apoio. Este é um espaço criado para a comunidade LGBTQ+, onde histórias se cruzam, experiências são compartilhadas e a diversidade é celebrada.
+          </p>
+          <p>
+              Junte-se a nós para construir uma rede de apoio e fortalecimento, onde todos podem viver, se expressar e inspirar. Estamos aqui por você e com você.
+          </p>
+            <div class="cta-buttons">
+                <a href="#cadastro" class="button">Junte-se a nós</a>
+                <a href="#recursos" class="button">Explore Recursos</a>
+            </div>
+          </div>
+        </section>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção de Destaques -->
+        <section class="destaques">
+            <h3>Destaques da Comunidade</h3>
+            <div class="noticias">
+                <!-- Notícia 1 -->
+                <article class="noticia">
+                    <div class="noticia-conteudo">
+                        <img src="./scr/img/certidao-nascimento-anoreg-1-ok.png" alt="Imagem de Certidão de nascimento" class="noticia-img">
+                        <div class="noticia-texto">
+                            <h4>TJ-AC determina gratuidade para inclusão de nome social no registro civil para pessoas trans de baixa renda</h4>
+                            <p>Medida, segundo a corte, garante direitos especialmente de grupos vulneráveis. De acordo com o TJ, decisão atende a demanda da comunidade levada a comitê de diversidade.</p>
+                            <a  target="_blank" href="https://g1.globo.com/ac/acre/noticia/2024/10/24/tj-ac-determina-gratuidade-para-inclusao-de-nome-social-no-registro-civil-para-pessoas-lgbt-de-baixa-renda.ghtml" class="button">Leia mais</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Notícia 2 -->
+                <article class="noticia">
+                    <div class="noticia-conteudo">
+                        <img src="./scr/img/lgbtqiapn-800_1.png" alt="Imagem de um coração com simbolo LGBT sendo segurando por um medico" class="noticia-img">
+                        <div class="noticia-texto">
+                            <h4>STF manda governo adotar medidas para garantir acesso de pessoas trans a serviços de saúde</h4>
+                            <p>Ministros julgaram pedido de providências para assegurar o tratamento no SUS de acordo com o gênero com o qual o paciente se identifica.</p>
+                            <a  target="_blank" href="#noticia2" class="button">Leia mais</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Notícia 3 -->
+                <article class="noticia">
+                    <div class="noticia-conteudo">
+                        <img src="./scr/img/zig.png" alt="Imagem mostra as cantoras Brooke Candy,Urias e Katy da Voz e as Abusadas" class="noticia-img">
+                        <div class="noticia-texto">
+                            <h4>ZIG Festival traz Urias, Katy da Voz e as Abusadas e mais</h4>
+                            <p>Os ingressos já estão disponíveis pelo Shotgun. O ZIG Festival, uma grande celebração do universo ZIG e de tudo que foi construído ao longo dos últimos anos, chega a São Paulo no dia 7 de dezembro. O evento será realizado no Sonora Garden, dentro do Estádio da Portuguesa, no Canindé, prometendo 13 horas ininterruptas de música e diversão, com mais de 25 atrações.</p>
+                            <a target="_blank" href="https://hashtagpop.com.br/zig-festival-traz-brooke-candy-urias-katy-da-voz-e-as-abusadas-e-mais-para-sao-paulo-em-dezembro/" class="button">Leia mais</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>     
+    </main>
+    
+    <!-- Seção de Grupos de Apoio e Institutos de Apoio -->
+    <section id="grupos-apoio" class="grupos-apoio">
+      <h2>Grupos de Apoio e Institutos de Apoio</h2>
+      <p class="descricao">Encontre organizações e grupos de apoio que oferecem suporte à comunidade LGBTQ+.</p>
+      
+      <div class="apoio-container">
+
+        <!-- Grupo 1 -->
+        <div class="apoio-card">
+          <img src="./scr/img/Transempregoslogo.png" alt="Imagem da Logo da Transemprego">
+          <h3>TransEmpregos</h3>
+          <p>A TransEmpregos é maior e mais antigo projeto de empregabilidade de pessoas Trans do Brasil. São milhares de currículos e acessos em nossos canais que promovem e auxiliam a contratações diariamente.</p>
+          <a href="https://www.transempregos.com.br/" target="_blank" class="button">Saiba mais</a>
+        </div>
+
+        <!-- Grupo 2 -->
+        <div class="apoio-card">
+          <img src="./scr/img/casa1_logo.png" alt="Imagem da logo da Casa1">
+          <h3>Casa 1</h3>
+          <p>Casa 1 é uma instituição que oferece abrigo e suporte para pessoas LGBTQ+ expulsas de casa, com foco em educação e cultura.</p>
+          <a href="https://casaum.org" target="_blank" class="button">Saiba mais</a>
+        </div>
+
+        <!-- Grupo 3 -->
+        <div class="apoio-card">
+          <img src="./scr/img/bichaJustica.png" alt="Imagem da Logo da BichaJustiça">
+          <h3>BICHA DA JUSTIÇA</h3>
+          <p>Somos uma empresa de assessoria jurídica e educação sobre direitos LGBTQIA+, com profissionais empáticos e que atuam em defesa da equidade e diversidade, para que, pessoas LGBTQIA+ se sintam representadas e tenham seus direitos garantidos.</p>
+          <a href="https://www.bichadajustica.com/" target="_blank" class="button">Saiba mais</a>
+        </div>             
+      </div>
+    </section>
+
+<!-- Rodapé -->
+<footer>
+  <p>© 2024 Transcender - Todos os direitos reservados.</p>
+  <div class="social-media">
+    <ul class="wrapper">
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <svg
+            viewBox="0 0 320 512"
+            height="1.2em"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+            ></path>
+          </svg>
+        </li>
+        <li class="icon twitter">
+          <span class="tooltip">Twitter</span>
+          <svg
+            height="1.8em"
+            fill="currentColor"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+            class="twitter"
+          >
+            <path
+              d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+            ></path>
+          </svg>
+        </li>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.2em"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            ></path>
+          </svg>
+        </li>
+      </ul>
+  </div>
+</footer>
+
+</body>
+</html>

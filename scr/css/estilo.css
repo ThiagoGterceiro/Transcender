@@ -13,6 +13,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     background-color: #fffab8b6;
+    padding-top: 70px; /* Ajuste conforme necessário para a altura da navbar */
+
 }
 
 /* Estilo para o conteúdo principal */
@@ -183,18 +185,7 @@ main {
     margin-bottom: 5px;
 }
 
-  /* Links dos documentos */
-  .doc-list a {
-    color: #da0053;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
 
-.doc-list a:hover {
-    color: #da0053;
-    text-decoration: underline;
-}
 
 
 

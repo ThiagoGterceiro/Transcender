@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <audio id="button-sound" src="./scr/audio/Rapaz (Xaropinho) - (áudio).mp3"></audio>
 
   <!-- Header com Navbar Horizontal -->
   <header class="navbar">
@@ -44,19 +43,12 @@
             <p>Junte-se a nós para construir uma rede de apoio e fortalecimento, onde todos podem viver, se expressar e inspirar. Estamos aqui por você e com você.</p>
             <div class="cta-buttons">
                 <!-- Botão com som ao clicar -->
-                <a href="#cadastro" class="button" onclick="playSound()">Junte-se a nós</a>
+                <a href="./formulario.html" class="button" onclick="playSound()">Junte-se a nós</a>
                 <a href="./recursos.html" class="button">Explore Recursos</a>
             </div>
         </div>
     </section>
-
-    <script>
-      function playSound() {
-          const sound = document.getElementById("button-sound");
-          sound.play();
-      }
-    </script>
-    
+  
   <main>
         <!-- Seção de Destaques -->
         <section class="destaques">
@@ -89,11 +81,11 @@
                 <!-- Notícia 3 -->
                 <article class="noticia">
                     <div class="noticia-conteudo">
-                        <img src="./scr/img/zig.png" alt="Imagem mostra as cantoras Brooke Candy,Urias e Katy da Voz e as Abusadas" class="noticia-img">
+                        <img src="./scr/img/erika-hilton-17abr2024-848x477.png" alt="Imagem mostra as cantoras Brooke Candy,Urias e Katy da Voz e as Abusadas" class="noticia-img">
                         <div class="noticia-texto">
-                            <h4>ZIG Festival traz Urias, Katy da Voz e as Abusadas e mais</h4>
-                            <p>Os ingressos já estão disponíveis pelo Shotgun. O ZIG Festival, uma grande celebração do universo ZIG e de tudo que foi construído ao longo dos últimos anos, chega a São Paulo no dia 7 de dezembro. </p>
-                            <a target="_blank" href="https://hashtagpop.com.br/zig-festival-traz-brooke-candy-urias-katy-da-voz-e-as-abusadas-e-mais-para-sao-paulo-em-dezembro/" class="button">Leia mais</a>
+                            <h4>Legalização do casamento gay no Brasil é aprovada por deputados; proposta também é de Erika Hilton                            </h4>
+                            <p>Deputados federais integrantes da Comissão de Direitos Humanos da Câmara aprovaram o projeto de lei que legaliza o direito ao casamento igualitário no Brasil. O texto do Projeto de Lei teve relatoria da deputada Erika Hilton (PSOL-SP), a mesma que propõe o fim da escala 6x1. </p>
+                            <a target="_blank" href="https://www.bnews.com.br/noticias/politica/legalizacao-do-casamento-gay-no-brasil-e-aprovada-por-deputados-erika-hilton-relatou-o-projeto.html" class="button">Leia mais</a>
                         </div>
                     </div>
                 </article>
@@ -134,6 +126,26 @@
       </div>
     </section>
   </main>
+  <audio id="button-sound" src="./scr/audio/Rapaz (Xaropinho) - (áudio).mp3"></audio>
+  <script>
+    // Função para tocar o som
+    function playSound() {
+        const sound = document.getElementById("button-sound");
+        sound.play();
+    }
+
+    // Função para adicionar evento de clique em cada ícone
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // Seleciona todos os botões de redes sociais
+        const socialIcons = document.querySelectorAll('.social-media .wrapper .icon');
+
+        // Adiciona o evento de clique em cada ícone
+        socialIcons.forEach(icon => {
+            icon.addEventListener('click', playSound);
+        });
+    });
+</script>
+
 <!-- Rodapé -->
 <footer>
   <p>© 2024 Transcender - Todos os direitos reservados.</p>

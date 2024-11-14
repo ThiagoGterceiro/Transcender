@@ -123,4 +123,69 @@
   
 
 
-  
+  /* Ajustes gerais para telas menores */
+@media (max-width: 768px) {
+  .detalhes-artista {
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .artista {
+      flex-direction: column; /* Empilha a imagem e o texto */
+      align-items: flex-start;
+  }
+
+  .foto-artista {
+      width: 60%; /* Ajusta a imagem para 100% da largura */
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  .info-artista {
+      width: 100%; /* Garante que o texto use a largura total */
+  }
+
+  .button-group {
+      flex-direction: column;
+      gap: 10px; /* Reduz o espaço entre os botões */
+  }
+
+  iframe {
+      width: 100%; /* Ajusta o vídeo do YouTube para largura total */
+      height: 100%; /* Mantém a proporção */
+  }
+}
+
+
+
+
+.video-container iframe {
+  width: 100%; /* Garante que o vídeo ocupe a largura total disponível */
+  height: 500px; /* Ajuste de altura maior para o vídeo */
+  border-radius: 8px;
+}
+
+.spotify-container iframe {
+  max-width: 100%; /* Garante que o iframe do Spotify ocupe a largura total disponível */
+  height: 152px; /* Ajuste de altura para o Spotify */
+  border-radius: 12px;
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 768px) {
+  .media-container {
+    flex-direction: column; /* Empilha o conteúdo */
+    align-items: center;
+  }
+
+  .video-container iframe {
+    width: 100%; /* Garante que o vídeo ocupe a largura total */
+    height: 300px; /* Ajuste de altura */
+  }
+
+  .spotify-container iframe {
+    width: 100%; /* Ajuste para 100% da largura do contêiner */
+    max-width: 400px; /* Definindo a largura máxima */
+    height: 352px; /* Ajustando a altura */
+  }
+}

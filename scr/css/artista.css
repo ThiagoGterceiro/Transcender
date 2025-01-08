@@ -1,0 +1,191 @@
+.detalhes-artista {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.artista {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-artista {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.info-artista {
+    flex: 1;
+}
+
+.video-artista {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/*botões do instagram */
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    overflow: hidden;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+
+
+  /*spotify */
+
+  .button {
+    display: flex;
+    background-color: #00DA5A;
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: .6s ease;
+  }
+  
+  .button svg {
+    height: 30px;
+  }
+  
+  .button:hover {
+    box-shadow: none;
+    transition-duration: .4s;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px; /* Espaço entre os botões */
+  }
+  
+
+
+  /* Ajustes gerais para telas menores */
+@media (max-width: 768px) {
+  .detalhes-artista {
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .artista {
+      flex-direction: column; /* Empilha a imagem e o texto */
+      align-items: flex-start;
+  }
+
+  .foto-artista {
+      width: 60%; /* Ajusta a imagem para 100% da largura */
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  .info-artista {
+      width: 100%; /* Garante que o texto use a largura total */
+  }
+
+  .button-group {
+      flex-direction: column;
+      gap: 10px; /* Reduz o espaço entre os botões */
+  }
+
+  iframe {
+      width: 100%; /* Ajusta o vídeo do YouTube para largura total */
+      height: 100%; /* Mantém a proporção */
+  }
+}
+
+
+
+
+.video-container iframe {
+  width: 100%; /* Garante que o vídeo ocupe a largura total disponível */
+  height: 500px; /* Ajuste de altura maior para o vídeo */
+  border-radius: 8px;
+}
+
+.spotify-container iframe {
+  max-width: 100%; /* Garante que o iframe do Spotify ocupe a largura total disponível */
+  height: 152px; /* Ajuste de altura para o Spotify */
+  border-radius: 12px;
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 768px) {
+  .media-container {
+    flex-direction: column; /* Empilha o conteúdo */
+    align-items: center;
+  }
+
+  .video-container iframe {
+    width: 100%; /* Garante que o vídeo ocupe a largura total */
+    height: 300px; /* Ajuste de altura */
+  }
+
+  .spotify-container iframe {
+    width: 100%; /* Ajuste para 100% da largura do contêiner */
+    max-width: 400px; /* Definindo a largura máxima */
+    height: 352px; /* Ajustando a altura */
+  }
+}
